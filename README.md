@@ -56,29 +56,14 @@ body{
 
 <body>
 
-<div class="terminal">
+<p class="typing">
+i'm headed home
+</p>
 
-<div class="line">
-> i'm headed home
-</div>
+<p class="typing2">
+i told you so
+</p>
 
-<br>
-
-<div class="line2">
-> i told you so
-</div>
-
-<br>
-
-<div class="line3">
-> ocean eyes and empty roads . . .
-</div>
-
-</div>
-
-<audio autoplay loop>
-<source src="https://files.catbox.moe/6rj9xf.mp3" type="audio/mp3">
-</audio>
-
-</body>
-</html>
+<p class="typing3">
+ocean eyes and empty roads . . .
+</p>
