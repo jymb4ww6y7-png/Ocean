@@ -12,15 +12,25 @@ body{
     background:black;
     overflow:hidden;
     font-family:monospace;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
 }
+
+/* terminal */
 
 .terminal{
-    padding:20px;
+
     color:#00ff66;
-    font-size:22px;
+    font-size:28px;
+    text-align:left;
+
 }
 
-/* lines */
+/* all lines */
 
 .line,
 .line2,
@@ -31,9 +41,19 @@ body{
 
     overflow:hidden;
     white-space:nowrap;
-    border-right:2px solid #00ff66;
+
     width:0;
     display:block;
+
+    margin:18px 0;
+
+    border-right:2px solid #00ff66;
+
+    text-shadow:
+    0 0 5px #00ff66,
+    0 0 10px #00ff66,
+    0 0 20px #00ff66,
+    0 0 40px #00ff66;
 
 }
 
@@ -43,6 +63,7 @@ body{
 
     animation:
     typing1 3s steps(20,end) forwards,
+    glow .08s infinite,
     blink .7s infinite;
 
 }
@@ -53,6 +74,7 @@ body{
 
     animation:
     typing2 3s steps(20,end) forwards,
+    glow .08s infinite,
     blink .7s infinite;
 
     animation-delay:3s;
@@ -65,6 +87,7 @@ body{
 
     animation:
     typing3 4s steps(40,end) forwards,
+    glow .08s infinite,
     blink .7s infinite;
 
     animation-delay:6s;
@@ -77,6 +100,7 @@ body{
 
     animation:
     typing4 4s steps(40,end) forwards,
+    glow .08s infinite,
     blink .7s infinite;
 
     animation-delay:10s;
@@ -89,6 +113,7 @@ body{
 
     animation:
     typing5 4s steps(40,end) forwards,
+    glow .08s infinite,
     blink .7s infinite;
 
     animation-delay:14s;
@@ -101,13 +126,14 @@ body{
 
     animation:
     typing6 4s steps(40,end) forwards,
+    glow .08s infinite,
     blink .7s infinite;
 
     animation-delay:18s;
 
 }
 
-/* typing */
+/* typing widths */
 
 @keyframes typing1{
     from{ width:0; }
@@ -139,12 +165,36 @@ body{
     to{ width:34ch; }
 }
 
-/* cursor */
+/* cursor blink */
 
 @keyframes blink{
 
     50%{
         border-color:transparent;
+    }
+
+}
+
+/* glowing letters */
+
+@keyframes glow{
+
+    0%{
+
+        text-shadow:
+        0 0 5px #00ff66,
+        0 0 10px #00ff66,
+        0 0 20px #00ff66;
+
+    }
+
+    100%{
+
+        text-shadow:
+        0 0 10px #00ff66,
+        0 0 20px #00ff66,
+        0 0 40px #00ff66;
+
     }
 
 }
@@ -158,23 +208,13 @@ body{
 
 <div class="line">> i'm headed home</div>
 
-<br>
-
 <div class="line2">> i told you so</div>
 
-<br>
+<div class="line3">> ocean eyes and empty roads . . .</div>
 
-<div class="line3">> i told you so so why are we not moving on . . .</div>
+<div class="line4">> your text here</div>
 
-<br>
-
-<div class="line4">> im headed home  </div>
-
-<br>
-
-<div class="line5">> let them know   isaid im going im going </div>
-
-<br>
+<div class="line5">> your text here</div>
 
 <div class="line6">> your text here</div>
 
