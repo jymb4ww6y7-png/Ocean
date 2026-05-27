@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>Ocean</title>
@@ -13,19 +14,20 @@ body{
     font-family:monospace;
 }
 
-/* مكان النص */
-
 .terminal{
     padding:20px;
     color:#00ff66;
     font-size:22px;
 }
 
-/* إعدادات الأسطر */
+/* lines */
 
 .line,
 .line2,
-.line3{
+.line3,
+.line4,
+.line5,
+.line6{
 
     overflow:hidden;
     white-space:nowrap;
@@ -35,7 +37,7 @@ body{
 
 }
 
-/* السطر الأول */
+/* line 1 */
 
 .line{
 
@@ -45,7 +47,7 @@ body{
 
 }
 
-/* السطر الثاني */
+/* line 2 */
 
 .line2{
 
@@ -57,7 +59,7 @@ body{
 
 }
 
-/* السطر الثالث */
+/* line 3 */
 
 .line3{
 
@@ -69,45 +71,75 @@ body{
 
 }
 
-/* تأثير الكتابة */
+/* line 4 */
+
+.line4{
+
+    animation:
+    typing4 4s steps(40,end) forwards,
+    blink .7s infinite;
+
+    animation-delay:10s;
+
+}
+
+/* line 5 */
+
+.line5{
+
+    animation:
+    typing5 4s steps(40,end) forwards,
+    blink .7s infinite;
+
+    animation-delay:14s;
+
+}
+
+/* line 6 */
+
+.line6{
+
+    animation:
+    typing6 4s steps(40,end) forwards,
+    blink .7s infinite;
+
+    animation-delay:18s;
+
+}
+
+/* typing */
 
 @keyframes typing1{
-
-    from{
-        width:0;
-    }
-
-    to{
-        width:18ch;
-    }
-
+    from{ width:0; }
+    to{ width:18ch; }
 }
 
 @keyframes typing2{
-
-    from{
-        width:0;
-    }
-
-    to{
-        width:17ch;
-    }
-
+    from{ width:0; }
+    to{ width:17ch; }
 }
 
 @keyframes typing3{
-
-    from{
-        width:0;
-    }
-
-    to{
-        width:34ch;
-    }
-
+    from{ width:0; }
+    to{ width:34ch; }
 }
 
-/* وميض المؤشر */
+@keyframes typing4{
+    from{ width:0; }
+    to{ width:34ch; }
+}
+
+@keyframes typing5{
+    from{ width:0; }
+    to{ width:34ch; }
+}
+
+@keyframes typing6{
+    from{ width:0; }
+    to{ width:34ch; }
+}
+
+/* cursor */
 
 @keyframes blink{
 
@@ -124,21 +156,27 @@ body{
 
 <div class="terminal">
 
-<div class="line">
-> i'm headed home
-</div>
+<div class="line">> i'm headed home</div>
 
 <br>
 
-<div class="line2">
-> i told you so
-</div>
+<div class="line2">> i told you so</div>
 
 <br>
 
-<div class="line3">
-> ocean eyes and empty roads . . .
-</div>
+<div class="line3">> i told you so so why are we not moving on . . .</div>
+
+<br>
+
+<div class="line4">> im headed home  </div>
+
+<br>
+
+<div class="line5">> let them know   isaid im going im going </div>
+
+<br>
+
+<div class="line6">> your text here</div>
 
 </div>
 
