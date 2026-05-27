@@ -1,36 +1,84 @@
-@obito: import sys
-from rich import print
-from time import sleep
-def printLyrics():
-lines = [
-("I wanna da-", 0.06),
-("I wanna dance in the lights", 0.05),
-("I wanna ro-", 0.07),
-("I wanna rock your body", 0.08),
-("I wanna go", 0.08),
-("I wanna go for a ride", 0.068),
-("Hop in the music and", 0.07),
-("Rock your body", 0.08),
-("Rock that body", 0.069),
-("come on, come on", 0.035),
-("Rock that body", 0.05),
-("(Rock your body)", 0.03),
-("Rock that body", 0.049),
-("come on, come on", 0.035),
-("Rock that body", 0.08),
-]
-delays = [0.2, 1, 0.2, 1, 0.2, 0.8, 0.2, 0.5, 0.18, 0.1, 0.15, 0.3, 0.3, 0.1, 5]
-for i, (line, char_delay) in enumerate(lines):
-for char in line:
-if line == '(Rock your body)':
-print(f"[bold italic #ff69b4]{char}[/bold italic #ff69b4]", end='')
-else:
-print(f"[bold italic #ff1493]{char}[/bold italic #ff1493]", end='') # deep pink
-sys.stdout.flush()
-sleep(char_delay)
-print()
-if i == len(lines) - 1:
-print("[blink][bold italic #ff69b4]🎵🎶🎵[/bold italic #ff69b4][/blink]")
-sleep(delays[i])
-if __name__ == "__main__":
-printLyrics()
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ocean</title>
+
+<style>
+body{
+    margin:0;
+    background:black;
+    overflow:hidden;
+    font-family: monospace;
+}
+
+.terminal{
+    padding:20px;
+    color:#00ff66;
+    font-size:22px;
+    white-space:pre-line;
+}
+
+.line{
+    overflow:hidden;
+    border-right:2px solid #00ff66;
+    width:0;
+    animation:typing 4s steps(40,end) forwards;
+}
+
+.line2{
+    overflow:hidden;
+    border-right:2px solid #00ff66;
+    width:0;
+    animation:typing 5s steps(40,end) forwards;
+    animation-delay:4s;
+}
+
+.line3{
+    overflow:hidden;
+    border-right:2px solid #00ff66;
+    width:0;
+    animation:typing 5s steps(40,end) forwards;
+    animation-delay:9s;
+}
+
+@keyframes typing{
+    from{
+        width:0;
+    }
+
+    to{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="terminal">
+
+<div class="line">
+> i'm headed home
+</div>
+
+<br>
+
+<div class="line2">
+> i told you so
+</div>
+
+<br>
+
+<div class="line3">
+> ocean eyes and empty roads . . .
+</div>
+
+</div>
+
+<audio autoplay loop>
+<source src="https://files.catbox.moe/6rj9xf.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>
