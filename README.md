@@ -10,58 +10,109 @@ body{
     margin:0;
     background:black;
     overflow:hidden;
-    font-family: monospace;
+    font-family:monospace;
 }
+
+/* مكان النص */
 
 .terminal{
     padding:20px;
     color:#00ff66;
     font-size:22px;
-    white-space:pre-line;
 }
 
-/* line 1 */
+/* إعدادات الأسطر */
+
+.line,
+.line2,
+.line3{
+
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:2px solid #00ff66;
+    width:0;
+    display:block;
+
+}
+
+/* السطر الأول */
 
 .line{
-    overflow:hidden;
-    border-right:2px solid #00ff66;
-    width:0;
-    white-space:nowrap;
-    animation:typing 4s steps(40,end) forwards;
+
+    animation:
+    typing1 3s steps(20,end) forwards,
+    blink .7s infinite;
+
 }
 
-/* line 2 */
+/* السطر الثاني */
 
 .line2{
-    overflow:hidden;
-    border-right:2px solid #00ff66;
-    width:0;
-    white-space:nowrap;
-    animation:typing 5s steps(40,end) forwards;
-    animation-delay:4s;
+
+    animation:
+    typing2 3s steps(20,end) forwards,
+    blink .7s infinite;
+
+    animation-delay:3s;
+
 }
 
-/* line 3 */
+/* السطر الثالث */
 
 .line3{
-    overflow:hidden;
-    border-right:2px solid #00ff66;
-    width:0;
-    white-space:nowrap;
-    animation:typing 5s steps(40,end) forwards;
-    animation-delay:9s;
+
+    animation:
+    typing3 4s steps(40,end) forwards,
+    blink .7s infinite;
+
+    animation-delay:6s;
+
 }
 
-/* typing effect */
+/* تأثير الكتابة */
 
-@keyframes typing{
+@keyframes typing1{
 
     from{
         width:0;
     }
 
     to{
-        width:max-content;
+        width:18ch;
+    }
+
+}
+
+@keyframes typing2{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:17ch;
+    }
+
+}
+
+@keyframes typing3{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:34ch;
+    }
+
+}
+
+/* وميض المؤشر */
+
+@keyframes blink{
+
+    50%{
+        border-color:transparent;
     }
 
 }
@@ -73,15 +124,21 @@ body{
 
 <div class="terminal">
 
-<div class="line">> i'm headed home</div>
+<div class="line">
+> i'm headed home
+</div>
 
 <br>
 
-<div class="line2">> i told you so</div>
+<div class="line2">
+> i told you so
+</div>
 
 <br>
 
-<div class="line3">> ocean eyes and empty roads . . .</div>
+<div class="line3">
+> ocean eyes and empty roads . . .
+</div>
 
 </div>
 
