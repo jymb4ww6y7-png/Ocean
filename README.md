@@ -23,23 +23,23 @@ body{
     overflow:hidden;
     border-right:2px solid #00ff66;
     width:0;
-    animation:typing 4s steps(40,end) forwards;
+    animation:typing 3s steps(40,end) forwards;
 }
 
 .line2{
     overflow:hidden;
     border-right:2px solid #00ff66;
     width:0;
-    animation:typing 5s steps(40,end) forwards;
-    animation-delay:4s;
+    animation:typing 3s steps(40,end) forwards;
+    animation-delay:3s;
 }
 
 .line3{
     overflow:hidden;
     border-right:2px solid #00ff66;
     width:0;
-    animation:typing 5s steps(40,end) forwards;
-    animation-delay:9s;
+    animation:typing 3s steps(40,end) forwards;
+    animation-delay:rage4:s;
 }
 
 @keyframes typing{
