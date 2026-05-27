@@ -38,15 +38,25 @@ body{
     overflow:hidden;
     border-right:2px solid #00ff66;
     width:0;
+    animation:typing 7s steps(40,end) forwards;
+    animation-delay:rage4:s;
+
+.line4{
+    overflow:hidden;
+    border-right:2px solid #00ff66;
+    width:0;
     animation:typing 3s steps(40,end) forwards;
     animation-delay:rage4:s;
-}
-
 @keyframes typing{
     from{
         width:0;
     }
-
+.line6{
+    overflow:hidden;
+    border-right:2px solid #00ff66;
+    width:0;
+    animation:typing 4s steps(40,end) forwards;
+    animation-delay:rage4:s;
     to{
         width:100%;
     }
@@ -71,11 +81,22 @@ body{
 <br>
 
 <div class="line3">
-> ocean eyes and empty roads . . .
+> i told you so why are we not moving on¿ . . .
 </div>
 
+<div class="line4">
+> im headed home 
 </div>
 
+<div class="line5">
+> let them know . . .
+</div>
+
+<div class="line6">
+> i said im going 
+    im going 
+    im going . . .
+</div>
 <audio autoplay loop>
 <source src="https://files.catbox.moe/6rj9xf.mp3" type="audio/mp3">
 </audio>
