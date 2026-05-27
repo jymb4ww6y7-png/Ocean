@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
 <meta charset="UTF-8">
@@ -8,19 +8,33 @@
 <style>
 
 body{
+
     margin:0;
     background:black;
     overflow:hidden;
     font-family:monospace;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+
 }
+
+/* terminal */
 
 .terminal{
-    padding:20px;
+
     color:#00ff66;
-    font-size:22px;
+    font-size:28px;
+
+    direction:rtl;
+    text-align:right;
+
 }
 
-/* lines */
+/* all lines */
 
 .line,
 .line2,
@@ -31,9 +45,21 @@ body{
 
     overflow:hidden;
     white-space:nowrap;
-    border-right:2px solid #00ff66;
+
+    border-left:2px solid #00ff66;
+    border-right:none;
+
     width:0;
+
     display:block;
+
+    margin:20px 0;
+
+    text-shadow:
+    0 0 5px #00ff66,
+    0 0 10px #00ff66,
+    0 0 20px #00ff66,
+    0 0 40px #00ff66;
 
 }
 
@@ -42,7 +68,7 @@ body{
 .line{
 
     animation:
-    typing1 5s steps(20,end) forwards,
+    typing1 5s steps(30,end) forwards,
     blink .1s infinite;
 
 }
@@ -52,10 +78,10 @@ body{
 .line2{
 
     animation:
-    typing2 5s steps(20,end) forwards,
+    typing2 5s steps(30,end) forwards,
     blink .1s infinite;
 
-    animation-delay:3s;
+    animation-delay:5s;
 
 }
 
@@ -65,9 +91,9 @@ body{
 
     animation:
     typing3 5s steps(40,end) forwards,
-    blink.0.2s infinite;
+    blink .2s infinite;
 
-    animation-delay:6s;
+    animation-delay:10s;
 
 }
 
@@ -79,7 +105,7 @@ body{
     typing4 4s steps(40,end) forwards,
     blink .1s infinite;
 
-    animation-delay:10s;
+    animation-delay:15s;
 
 }
 
@@ -89,9 +115,9 @@ body{
 
     animation:
     typing5 4s steps(40,end) forwards,
-    blink .s infinite;
+    blink .1s infinite;
 
-    animation-delay:14s;
+    animation-delay:19s;
 
 }
 
@@ -100,46 +126,88 @@ body{
 .line6{
 
     animation:
-    typing6 4s steps(40,end) forwards,
+    typing6 4s steps(20,end) forwards,
     blink .7s infinite;
 
-    animation-delay:18s;
+    animation-delay:23s;
 
 }
 
-/* typing */
+/* typing effect */
 
 @keyframes typing1{
-    from{ width:0; }
-    to{ width:18ch; }
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:24ch;
+    }
+
 }
 
 @keyframes typing2{
-    from{ width:0; }
-    to{ width:17ch; }
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:28ch;
+    }
+
 }
 
 @keyframes typing3{
-    from{ width:0; }
-    to{ width:34ch; }
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:34ch;
+    }
+
 }
 
 @keyframes typing4{
-    from{ width:0; }
-    to{ width:34ch; }
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:27ch;
+    }
+
 }
 
 @keyframes typing5{
-    from{ width:0; }
-    to{ width:34ch; }
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:29ch;
+    }
+
 }
 
 @keyframes typing6{
-    from{ width:0; }
-    to{ width:34ch; }
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:5ch;
+    }
+
 }
 
-/* cursor */
+/* cursor blink */
 
 @keyframes blink{
 
@@ -156,27 +224,17 @@ body{
 
 <div class="terminal">
 
-<div class="line">> تبعد واحسك دوم قاعد ببالي </div>
+<div class="line">تبعد واحسك دوم قاعد ببالي ></div>
 
-<br>
+<div class="line2">والتفت ماالقاك واحضن خيالي ></div>
 
-<div class="line2">> والتفت ماالقاك واحضن خيالي</div>
+<div class="line3">قلبي اليحبك موت قد مايحبك . . . ></div>
 
-<br>
+<div class="line4">مو قلبي لاوالله سميته قلبك ></div>
 
-<div class="line3">> قلبي اليحبك موت قد مايحبك . . .</div>
+<div class="line5">ماعندي كل غالين بس انت غالي ></div>
 
-<br>
-
-<div class="line4">> مو قلبي لاوالله سميته قلبك </div>
-
-<br>
-
-<div class="line5">> ماعندي كل غالين بس انت غالي </div>
-
-<br>
-
-<div class="line6">> MMM. </div>
+<div class="line6">MMM. ></div>
 
 </div>
 
