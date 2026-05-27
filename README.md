@@ -38,15 +38,16 @@ body{
     overflow:hidden;
     border-right:2px solid #00ff66;
     width:0;
-    animation:typing 7s steps(40,end) forwards;
-    animation-delay:rage4:s;
-
+animation:typing 6s steps(40,end) forwards;
+    animation-delay:2s;
+}
+    
 .line4{
-    overflow:hidden;
+ overflow:hidden;
     border-right:2px solid #00ff66;
     width:0;
     animation:typing 3s steps(40,end) forwards;
-    animation-delay:rage4:s;
+    animation-delay:2s;
 @keyframes typing{
     from{
         width:0;
@@ -56,7 +57,7 @@ body{
     border-right:2px solid #00ff66;
     width:0;
     animation:typing 4s steps(40,end) forwards;
-    animation-delay:rage4:s;
+    animation-delay:2s;
     to{
         width:100%;
     }
