@@ -12,25 +12,15 @@ body{
     background:black;
     overflow:hidden;
     font-family:monospace;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    height:100vh;
 }
-
-/* terminal */
 
 .terminal{
-
+    padding:20px;
     color:#00ff66;
-    font-size:28px;
-    text-align:left;
-
+    font-size:22px;
 }
 
-/* all lines */
+/* lines */
 
 .line,
 .line2,
@@ -41,19 +31,9 @@ body{
 
     overflow:hidden;
     white-space:nowrap;
-
+    border-right:2px solid #00ff66;
     width:0;
     display:block;
-
-    margin:18px 0;
-
-    border-right:2px solid #00ff66;
-
-    text-shadow:
-    0 0 5px #00ff66,
-    0 0 10px #00ff66,
-    0 0 20px #00ff66,
-    0 0 40px #00ff66;
 
 }
 
@@ -62,9 +42,8 @@ body{
 .line{
 
     animation:
-    typing1 3s steps(20,end) forwards,
-    glow .08s infinite,
-    blink .7s infinite;
+    typing1 5s steps(20,end) forwards,
+    blink .1s infinite;
 
 }
 
@@ -73,9 +52,8 @@ body{
 .line2{
 
     animation:
-    typing2 3s steps(20,end) forwards,
-    glow .08s infinite,
-    blink .7s infinite;
+    typing2 5s steps(20,end) forwards,
+    blink .1s infinite;
 
     animation-delay:3s;
 
@@ -86,9 +64,8 @@ body{
 .line3{
 
     animation:
-    typing3 4s steps(40,end) forwards,
-    glow .08s infinite,
-    blink .7s infinite;
+    typing3 5s steps(40,end) forwards,
+    blink.0.2s infinite;
 
     animation-delay:6s;
 
@@ -100,8 +77,7 @@ body{
 
     animation:
     typing4 4s steps(40,end) forwards,
-    glow .08s infinite,
-    blink .7s infinite;
+    blink .1s infinite;
 
     animation-delay:10s;
 
@@ -113,8 +89,7 @@ body{
 
     animation:
     typing5 4s steps(40,end) forwards,
-    glow .08s infinite,
-    blink .7s infinite;
+    blink .s infinite;
 
     animation-delay:14s;
 
@@ -126,14 +101,13 @@ body{
 
     animation:
     typing6 4s steps(40,end) forwards,
-    glow .08s infinite,
     blink .7s infinite;
 
     animation-delay:18s;
 
 }
 
-/* typing widths */
+/* typing */
 
 @keyframes typing1{
     from{ width:0; }
@@ -165,36 +139,12 @@ body{
     to{ width:34ch; }
 }
 
-/* cursor blink */
+/* cursor */
 
 @keyframes blink{
 
     50%{
         border-color:transparent;
-    }
-
-}
-
-/* glowing letters */
-
-@keyframes glow{
-
-    0%{
-
-        text-shadow:
-        0 0 5px #00ff66,
-        0 0 10px #00ff66,
-        0 0 20px #00ff66;
-
-    }
-
-    100%{
-
-        text-shadow:
-        0 0 10px #00ff66,
-        0 0 20px #00ff66,
-        0 0 40px #00ff66;
-
     }
 
 }
@@ -206,17 +156,27 @@ body{
 
 <div class="terminal">
 
-<div class="line">> i'm headed home</div>
+<div class="line">> تبعد واحسك دوم قاعد ببالي </div>
 
-<div class="line2">> i told you so</div>
+<br>
 
-<div class="line3">> ocean eyes and empty roads . . .</div>
+<div class="line2">> والتفت ماالقاك واحضن خيالي</div>
 
-<div class="line4">> your text here</div>
+<br>
 
-<div class="line5">> your text here</div>
+<div class="line3">> قلبي اليحبك موت قد مايحبك . . .</div>
 
-<div class="line6">> your text here</div>
+<br>
+
+<div class="line4">> مو قلبي لاوالله سميته قلبك </div>
+
+<br>
+
+<div class="line5">> ماعندي كل غالين بس انت غالي </div>
+
+<br>
+
+<div class="line6">> MMM. </div>
 
 </div>
 
